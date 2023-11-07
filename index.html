@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> SET INTERVAL </h1>
+
+
+    <script>
+const para = document.createElement('p');
+      para.id = 'p1';
+      para.textContent = 'This is a new paragraph created using JavaScript';
+      document.body.appendChild(para);
+      let opt=document.getElementById('p1');
+      function menu(f1,f2) {
+        opt.innerHTML=`I had ${f1} and ${f2}`
+      }
+      setTimeout(menu,3000,"apple","orange")
+
+      opt.style.color = 'red';
+      opt.style.textAlign ="center";
+      opt.style.fontSize = "20px"
+
+    </script>
+</body>
+</html>
